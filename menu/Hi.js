@@ -8,7 +8,7 @@ export default async function Hi(from, pushname, body, e) {
         await CrateDatabase({ from: from, menu: 'main' });
         let message = `*السلام عليكم ورحمه الله وبركاته* \n`
         message += `*${pushname} حياك الله* \n\n`
-        message += '*▪️ لطلب مادة ما من المواد أدناه كل ما عليك إرسال *رقم* المادة باللغة العربية أو الإنجليزية* \n\n'
+        message += '*▪️ لطلب مادة ما من المواد أدناه كل ما عليك إرسال رقم المادة باللغة العربية أو الإنجليزية* \n\n'
         message += '*مثال: 1* \n\n'
         message += '*1- القرآن الكريم* \n'
         message += '*2- الباحث القرآني* \n'
@@ -17,7 +17,7 @@ export default async function Hi(from, pushname, body, e) {
         message += '*5- صحيح البخاري (صور مصممة)* \n'
         message += '*6- حصن المسلم* \n'
         message += '*7- التقويم الهجري* \n'
-        message += '*8- فيديوهات عشوائية* \n'
+        message += '*8- فيديوهات عشوائية* \n\n'
         
         message += '*نوصيكم بالمساهمة في دعم المشروع الإسلامي على قدر المستطاع حتى لو 1$ (لعلها تكون لك صدقة جارية)* \n'
         await e.reply(message).catch(e => console.log(e));
